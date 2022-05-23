@@ -1,16 +1,21 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-    const navbarItem = <>
-        <li><a>Tools</a></li>
+    const navbarItem =
+     <>
+        <li> <Link to='/' className='text-xl'>Home</Link></li>
+        <li> <Link to='/tools'className='text-xl'>Tools</Link></li>
+        <li> <Link to='/summary'className='text-xl'>Business Summary</Link></li>
+        <li> <Link to='/reviews'className='text-xl'>Reviews</Link></li>
+        <li> <Link to='/login'className='text-xl'> Login</Link></li>
+        {/* <li> <Link to='/tools'></Link></li> */}
 
-        <li><a>Business Summary</a></li>
-        <li><a>Reviews</a></li>
-        <li><a>Login</a></li>
+        
 
     </>
     return (
-        <div class="navbar bg-info">
+        <div class="navbar bg-info sticky top-0 z-50">
             <div class="navbar-start">
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
