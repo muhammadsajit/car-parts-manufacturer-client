@@ -11,6 +11,7 @@ import SignUp from './Pages/SignUp/SignUp';
 import RequireAuth from './Pages/Login/RequireAuth';
 import Summary from './Pages/Home/Summary';
 import Footer from './Footer/Footer';
+import ToolsDetail from './Pages/ToolsDetail/ToolsDetail';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
      <Route path='signup' element={<SignUp></SignUp>}></Route>
      <Route path='blogs' element={<Blogs></Blogs>}></Route>
      <Route path='summary' element={<Summary></Summary>}></Route>
+     <Route path='details/:detailId' element={<ToolsDetail></ToolsDetail>}></Route>
 
      <Route path='myPortfolio' element={<MyPortfolio></MyPortfolio>}></Route>
      <Route path='*' element={<NotFound></NotFound>}></Route>
