@@ -29,6 +29,15 @@ const Blogs = () => {
 
 
             </div>
+
+            
+            <div>
+                <h1 className='px-5 text-blue-400 text-2xl mt-2'> 3.How does prototypical inheritance work?</h1>
+                <p className='text-xl px-5'>Prototypical inheritance works as-</p>
+                <p className='text-xl px-5'>JavaScript is a prototype-based, Object Oriented programming language. Prototypical inheritance refers to the ability to access object properties from another object. We use a JavaScript prototype to add new properties and methods to an existing object constructor. We can then essentially tell our JS code to inherit properties from a prototype. Prototypical inheritance allows us to reuse the properties or methods from one JavaScript object to another through a reference pointer function.</p>
+                
+
+            </div>
         </div>
     );
 };
