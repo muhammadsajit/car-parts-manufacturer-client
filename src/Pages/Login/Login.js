@@ -4,6 +4,7 @@ import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-fireba
 import { useForm } from 'react-hook-form';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { Link } from 'react-router-dom';
+import Loading from '../Loading/Loading';
 
 const Login = () => {
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
@@ -19,9 +20,12 @@ const Login = () => {
     }
     let errorMessage;
     if(error ||gError){
-        errorMessage=<p className='text-red'>{error?.message|| gError?.message}</p>
+        errorMessage=<p className='text-red-500'>{error?.message|| gError?.message}</p>
 
 
+    }
+    if(loading ||gLoading){
+      return  <Loading></Loading>
     }
 
     const onSubmit = data=>{
