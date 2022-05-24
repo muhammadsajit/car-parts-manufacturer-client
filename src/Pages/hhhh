@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "name": "Physiotherapy",
+        "price": "300",
+        "description": "Physiotherapy helps to restore movement and function when someone is affected by injury, illness or disability.",
+        "img": "https://i.ibb.co/tsDHSr3/close-up-physiotherapist-working-with-patient-clinic.jpg"
+    },
+    {
+        "id": 2,
+        "name": "DNA testing",
+        "price": "100",
+        "description": " Genetic testing can reveal changes (mutations) in your genes that may cause illness or disease.",
+        "img": "https://i.ibb.co/Cmq6gjZ/national-cancer-institute-l-Tl-B51-XGP4-unsplash.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Vaccination",
+        "price": "150",
+        "description": "Vaccination is a simple, safe, and effective way of protecting people against harmful diseases, before they come into contact with them.",
+        "img": "https://i.ibb.co/85JdQDt/covid-still-life-with-vaccine.jpg"
+    },
+    {
+        "id": 4,
+        "name": "PCR testing",
+        "price": "180",
+        "description": " PCR test involves ... The test involves taking a swab of the inside of your nose and the back of your throat, using a long cotton bud.",
+        "img": "https://i.ibb.co/4Rp4VGc/emin-baycan-MD2-sr-N-02o-unsplash.jpg"
+    },
+    {
+        "id": 5,
+        "name": " Ultrasonography ",
+        "price": "100",
+        "description": " Ultrasonography helps you to monitor an unborn baby in the womb and make sure it is developing normally.",
+        "img": "https://i.ibb.co/M1K8RYR/patient-couch-doctor-makes-ultrasound-diagnosis-man-white-uniform.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Blood Test",
+        "price": "300",
+        "description": "A blood test usually involves taking a blood sample from a blood vessel in your arm",
+        "img": "https://i.ibb.co/M27FCTM/scientist-researcher-doctor-with-ppe-equipment-holding-test-tubes-analyzing-blood-sample-working-vac.jpg"
+    }
+    ,
+    {
+        "id": 4,
+        "name": "PCR testing",
+        "price": "180",
+        "description": " PCR test involves ... The test involves taking a swab of the inside of your nose and the back of your throat, using a long cotton bud.",
+        "img": "https://i.ibb.co/4Rp4VGc/emin-baycan-MD2-sr-N-02o-unsplash.jpg"
+    },
+    {
+        "id": 5,
+        "name": " Ultrasonography ",
+        "price": "100",
+        "description": " Ultrasonography helps you to monitor an unborn baby in the womb and make sure it is developing normally.",
+        "img": "https://i.ibb.co/M1K8RYR/patient-couch-doctor-makes-ultrasound-diagnosis-man-white-uniform.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Blood Test",
+        "price": "300",
+        "description": "A blood test usually involves taking a blood sample from a blood vessel in your arm",
+        "img": "https://i.ibb.co/M27FCTM/scientist-researcher-doctor-with-ppe-equipment-holding-test-tubes-analyzing-blood-sample-working-vac.jpg"
+    }
+]
