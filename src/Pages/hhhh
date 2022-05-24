@@ -1,66 +1,93 @@
 [
     {
-        "id": 1,
-        "name": "Physiotherapy",
-        "price": "300",
-        "description": "Physiotherapy helps to restore movement and function when someone is affected by injury, illness or disability.",
-        "img": "https://i.ibb.co/tsDHSr3/close-up-physiotherapist-working-with-patient-clinic.jpg"
+        
+        "name": "Disk Brake",
+        "perUnitPrice": "400",
+        "minimumOrderQuantity":50,
+        "availableQuantity":200,
+        "description": "A disc brake is a type of brake that uses the calipers to squeeze pairs of pads against a disc or a rotor to create friction.",
+        "img": "https://i.ibb.co/KjqXBHk/markus-winkler-09n-J4-Jgdcn-Q-unsplash.jpg"
     },
     {
-        "id": 2,
-        "name": "DNA testing",
-        "price": "100",
-        "description": " Genetic testing can reveal changes (mutations) in your genes that may cause illness or disease.",
-        "img": "https://i.ibb.co/Cmq6gjZ/national-cancer-institute-l-Tl-B51-XGP4-unsplash.jpg"
+        
+        "name": "Car Battery",
+        "perUnitPrice": "200",
+        "minimumOrderQuantity":60,
+        "availableQuantity":200,
+        "description": "car battery is a rechargeable battery that is used to start a motor vehicle",
+        "img": "https://i.ibb.co/ZmNdywz/kumpan-electric-30-D7430ywf4-unsplash.jpg"
     },
     {
-        "id": 3,
-        "name": "Vaccination",
-        "price": "150",
-        "description": "Vaccination is a simple, safe, and effective way of protecting people against harmful diseases, before they come into contact with them.",
-        "img": "https://i.ibb.co/85JdQDt/covid-still-life-with-vaccine.jpg"
+        
+        "name": "Foot Pedel",
+        "perUnitPrice": "500",
+        "minimumOrderQuantity":70,
+        "availableQuantity":300,
+        "description": " It acts as a footrest for the left foot, for the comfort of the driver.",
+        "img": "https://i.ibb.co/dBxj1Qb/vecteezy-accelerate-and-brake-foot-pressing-foot-pedal-of-a-car-to-6677721-458.jpg"
     },
     {
-        "id": 4,
-        "name": "PCR testing",
-        "price": "180",
-        "description": " PCR test involves ... The test involves taking a swab of the inside of your nose and the back of your throat, using a long cotton bud.",
-        "img": "https://i.ibb.co/4Rp4VGc/emin-baycan-MD2-sr-N-02o-unsplash.jpg"
+        
+        "name": "Tire",
+        "perUnitPrice": "600",
+        "minimumOrderQuantity":40,
+        "availableQuantity":100,
+        "description": "Car tires require regular maintenance and care to keep you safely on the road.",
+        "img": "https://i.ibb.co/YRf31Sp/enis-yavuz-Cs-Ya-Nzll-r-A-unsplash.jpg"
     },
     {
-        "id": 5,
-        "name": " Ultrasonography ",
-        "price": "100",
-        "description": " Ultrasonography helps you to monitor an unborn baby in the womb and make sure it is developing normally.",
-        "img": "https://i.ibb.co/M1K8RYR/patient-couch-doctor-makes-ultrasound-diagnosis-man-white-uniform.jpg"
+        
+        "name": "Side Mirror",
+        "perUnitPrice": "400",
+        "minimumOrderQuantity":60,
+        "availableQuantity":200,
+        "description": " a mirror on the outside of a vehicle that allows the driver to see what is behind and to the right or left of the vehicle.",
+        "img": "https://i.ibb.co/sqdNhWf/kalle-kortelainen-Hn-Wo-AM0b-Mec-unsplash.jpg"
+    },
+   
+    {
+        
+        "name": "Steering",
+        "perUnitPrice": "700",
+        "minimumOrderQuantity":40,
+        "availableQuantity":100,
+        "description": "The steering system moves the track rod from left to right across the car",
+        "img": "https://i.ibb.co/wCyJF8V/steering.jpg"
     },
     {
-        "id": 6,
-        "name": "Blood Test",
-        "price": "300",
-        "description": "A blood test usually involves taking a blood sample from a blood vessel in your arm",
-        "img": "https://i.ibb.co/M27FCTM/scientist-researcher-doctor-with-ppe-equipment-holding-test-tubes-analyzing-blood-sample-working-vac.jpg"
+        
+        "name": "Gear",
+        "perUnitPrice": "2000",
+        "minimumOrderQuantity":30,
+        "availableQuantity":100,
+        "description": "gears transmit power from the crankshaft  to the driveshaft running under the car that ultimately powers the wheels",
+        "img": "https://i.ibb.co/GFjZJfm/gear.jpg"
+    },
+    {
+        
+        "name": "Engine",
+        "perUnitPrice": "7000",
+        "minimumOrderQuantity":10,
+        "availableQuantity":100,
+        "description": "A machine for converting any of various forms of energy into mechanical force and motion",
+        "img": "https://i.ibb.co/31PBKKM/engine.jpg"
+    },
+    {
+        
+        "name": "Rear View Mirror",
+        "perUnitPrice": "6000",
+        "minimumOrderQuantity":10,
+        "availableQuantity":100,
+        "description": "a small angled mirror fixed inside the windscreen of a motor vehicle enabling the driver to see the vehicle or road behind.",
+        "img": "https://i.ibb.co/Nm2GLtj/rearview-mirror.jpg"
+    },
+    {
+        
+        "name": "shock absorber",
+        "perUnitPrice": "600",
+        "minimumOrderQuantity":20,
+        "availableQuantity":100,
+        "description": "shock absorber, also called Snubber, device for controlling unwanted motion of a spring-mounted vehicle.",
+        "img": "https://i.ibb.co/L6pBKFH/shock-absorber.jpg"
     }
-    ,
-    {
-        "id": 4,
-        "name": "PCR testing",
-        "price": "180",
-        "description": " PCR test involves ... The test involves taking a swab of the inside of your nose and the back of your throat, using a long cotton bud.",
-        "img": "https://i.ibb.co/4Rp4VGc/emin-baycan-MD2-sr-N-02o-unsplash.jpg"
-    },
-    {
-        "id": 5,
-        "name": " Ultrasonography ",
-        "price": "100",
-        "description": " Ultrasonography helps you to monitor an unborn baby in the womb and make sure it is developing normally.",
-        "img": "https://i.ibb.co/M1K8RYR/patient-couch-doctor-makes-ultrasound-diagnosis-man-white-uniform.jpg"
-    },
-    {
-        "id": 6,
-        "name": "Blood Test",
-        "price": "300",
-        "description": "A blood test usually involves taking a blood sample from a blood vessel in your arm",
-        "img": "https://i.ibb.co/M27FCTM/scientist-researcher-doctor-with-ppe-equipment-holding-test-tubes-analyzing-blood-sample-working-vac.jpg"
-    }
-]
+    ]
