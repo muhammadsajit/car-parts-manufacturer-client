@@ -52,6 +52,14 @@ const Blogs = () => {
 
 
             </div>
+            <div>
+                <h1 className='px-5 text-blue-400 text-2xl mt-2'> 5.What is a unit test? Why should write unit tests?</h1>
+                <p className='text-xl px-5'>Unit Test:Unit tests are typically automated tests written and run by software developers to ensure that a section of an application  meets its design and behaves as intended. </p>
+                <p className='text-xl px-5'>We Write unit test beacuse unit tests is that they isolate a function, class or method and only test that piece of code. Higher quality individual components create overall system resiliency. Thus, the result is reliable code. Unit tests also change the nature of the debugging process.</p>
+               
+                
+
+            </div>
         </div>
     );
 };
