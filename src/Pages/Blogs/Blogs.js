@@ -15,7 +15,7 @@ const Blogs = () => {
                 <p className='text-xl px-5'>5. Lazy loading images in React</p>
 
             </div>
-{/* 
+
             <div >
              <h1 className='px-5 text-blue-400 text-2xl mt-2'>2.What are the different ways to manage a state in a React application?</h1>
              <p className='text-xl px-5'>Difference ways to  manage a state in a react application</p>
@@ -28,7 +28,7 @@ const Blogs = () => {
                 
 
 
-            </div> */}
+            </div>
         </div>
     );
 };
