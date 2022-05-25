@@ -6,26 +6,35 @@ import auth from '../../firebase.init';
 
 const Navbar = () => {
     const [user] = useAuthState(auth);
-    const logOut=()=>{
+    const logOut = () => {
         signOut(auth);
-        
+
     }
     const navbarItem =
-     <>
-        <li> <Link to='/' className='text-xl'>Home</Link></li>
+        <>
+            <li> <Link to='/' className='text-xl'>Home</Link></li>
 
-        <li> <Link to='/blogs'className='text-xl'>Blogs</Link></li>
+            <li> <Link to='/blogs' className='text-xl'>Blogs</Link></li>
 
-        <li> <Link to='/reviews'className='text-xl'>Reviews</Link></li>
-        <li> <Link to='/myPortfolio'className='text-xl'>My Portfolio</Link></li>
-  
-        <li>{user? <button onClick={logOut} className="btn btn-ghost">signOut</button>:<Link to='/login'className='text-xl'>Login</Link>}</li>
-        <li>{user && <button className="btn btn-primary">{user.displayName}</button>}</li>
-        {/* <li> <Link to='/tools'></Link></li> */}
+            <li> <Link to='/reviews' className='text-xl'>Reviews</Link></li>
+            <li> <Link to='/myPortfolio' className='text-xl'>My Portfolio</Link></li>
+            {user &&
+                <>
 
-        
+                    <li> <Link to='/dashboard' className='text-xl'>DashBoard</Link></li>
+                    <li><button className="btn btn-primary text-xl">{user.displayName}</button></li>
 
-    </>
+                </>
+
+            }
+
+            <li>{user ? <button onClick={logOut} className="btn btn-ghost text-xl">signOut</button> : <Link to='/login' className='text-xl'>Login</Link>}</li>
+
+            {/* <li> <Link to='/tools'></Link></li> */}
+
+
+
+        </>
     return (
         <div className="navbar bg-info sticky top-0 z-50">
             <div className="navbar-start">
@@ -45,6 +54,13 @@ const Navbar = () => {
 
                 </ul>
             </div>
+            <div className="navbar-end">
+           <label for="my-drawer-2" tabIndex="1" className="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
+
+           
+           </div>
 
         </div>
     );
