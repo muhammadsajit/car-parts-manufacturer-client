@@ -17,7 +17,7 @@ const MyOrder = () => {
     return (
         <div>
             <h1>My orders:{orders.length}</h1>
-            <div class="overflow-x-auto">
+            <div class="overflow-x-auto   md:block ">
   <table class="table w-full">
     
     <thead>
