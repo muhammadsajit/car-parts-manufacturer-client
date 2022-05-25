@@ -23,7 +23,7 @@ const Items = () => {
             <h1 className='text-center text-purple-600 font-bold text-4xl mt-5'>Cars Parts</h1>
             <div className='grid sm:grid-cols1 lg:grid-cols-3 gap-10 px-10'>
                 {
-                    parts.slice(0,6).reverse().map(part=><SingleParts key={part._id}
+                    parts.slice(Math.max(parts.length -6,0)).reverse().map(part=><SingleParts key={part._id}
                     part={part}></SingleParts>)
                 }
 

@@ -13,6 +13,8 @@ import Summary from './Pages/Home/Summary';
 import Footer from './Footer/Footer';
 
 import Purchase from './Pages/Purchase/Purchase';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
@@ -33,6 +35,7 @@ function App() {
 
        </Routes>
       <Footer></Footer>
+      <ToastContainer></ToastContainer>
       
     </div>
   );
