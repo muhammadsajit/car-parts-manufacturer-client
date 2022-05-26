@@ -55,7 +55,7 @@ if(email){
 
     return (
         <div>
-            <h1 className='text-center text-primary text-4xl'>My profile</h1>
+            <h1 className='text-center text-primary text-4xl mb-4'>My profile</h1>
             <div>
             <form onSubmit={onSubmit} className='grid grid-cols-1 gap-3 justify-items-center'>
 

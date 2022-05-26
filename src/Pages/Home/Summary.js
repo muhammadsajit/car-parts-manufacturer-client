@@ -41,7 +41,7 @@ const Summary = () => {
   </div>
 </div>
             </div>
-            <div className='bg-info text-3xl mt-5 h-44 text-center rounded p-2'>
+            <div className='bg-info text-3xl mt-5 h-44 text-center rounded mx-auto'>
                 <p >Our Services Are Best.. </p>
                 <p>  Our all tools are very essential for daily purpose..</p>
                 <button className='btn btn-primary mb-4 mt-2 '>Support Us</button>

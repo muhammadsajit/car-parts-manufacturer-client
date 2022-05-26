@@ -23,7 +23,7 @@ import MyProfile from './Pages/Dashboard/MyProfile';
 
 function App() {
   return (
-    <div >
+    <div className='mx-auto' >
        <Navbar></Navbar>
        <Routes>
      <Route path='/' element={<Home></Home>}></Route>

@@ -8,7 +8,7 @@ const Contact = () => {
 <h1 className='text-center text-7xl text-primary font bold mt-10'>Contact Us</h1>
 </div>
 
-            <div className="hero min-h-screen  gap-20 mb-10 ">
+            <div className="hero min-h-screen  gap-10 mb-10 ">
 
         <div className="hero-content flex-col lg:flex-row-reverse gap-10">
           <img src={owner} className="max-w-sm rounded-lg shadow-2xl h-96" />
