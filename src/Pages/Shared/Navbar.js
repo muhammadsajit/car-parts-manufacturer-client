@@ -3,11 +3,13 @@ import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import auth from '../../firebase.init';
+import Loading from '../Loading/Loading';
 
 const Navbar = () => {
-    const [user] = useAuthState(auth);
+    const [user,loading] = useAuthState(auth);
     const logOut = () => {
         signOut(auth);
+        localStorage.removeItem('accessToken')
 
     }
     const navbarItem =
@@ -35,6 +37,9 @@ const Navbar = () => {
 
 
         </>
+        if(loading){
+            return <Loading></Loading>
+        }
     return (
         <div className="navbar bg-info sticky top-0 z-50">
             <div className="navbar-start">

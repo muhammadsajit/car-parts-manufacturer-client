@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
 
 const MyProfile = () => {
+    const[profiles,setProfiles]=useState([]);
     const [user] = useAuthState(auth);
+    
+        useEffect(()=>{
+            fetch('http://localhost:5000/profiles')
+            .then(res=>res.json())
+            .then(data=>{
+                setProfiles(data)
+                console.log(data)
+            })
+        },[user])
+    
+ 
     const onSubmit=(event)=>{
         event.preventDefault();
 
@@ -70,6 +82,7 @@ if(email){
 <input type="submit" value='Update' placeholder="" className="input input-bordered w-full max-w-xs btn btn-primary" />
 </form>
             </div>
+            
         </div>
     );
 };
