@@ -37,7 +37,7 @@ function App() {
 
        <Route index element={<MyProfile></MyProfile>}></Route>
        <Route path='review' element={<AddReview></AddReview>}></Route>
-       <Route path='users' element={<Users></Users>}></Route>
+       <Route path='adminUser' element={<Users></Users>}></Route>
        <Route path='orders' element={<MyOrder></MyOrder>}></Route>
 
 
