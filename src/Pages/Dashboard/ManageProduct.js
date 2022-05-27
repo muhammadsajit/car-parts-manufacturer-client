@@ -5,7 +5,7 @@ import Loading from '../Loading/Loading';
 import ProductRow from './ProductRow';
 
 const ManageProduct = () => {
-    const {data:products,isLoading}=useQuery('products',()=>fetch('http://localhost:5000/items',{
+    const {data:products,isLoading,refetch}=useQuery('products',()=>fetch('http://localhost:5000/items',{
         headers:{
 
             "authorization":`Bearer ${localStorage.getItem('accessToken')}`
@@ -39,7 +39,8 @@ const ManageProduct = () => {
       {
           products.slice().reverse().map((product,index)=><ProductRow key={product._key}
           product={product}
-          index={index}></ProductRow>)
+          index={index}
+          refetch={refetch}></ProductRow>)
       }
      
       
