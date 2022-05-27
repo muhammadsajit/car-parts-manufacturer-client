@@ -13,7 +13,7 @@ const SingleParts = ({part}) => {
            <figure className= 'px-10 pt-10'><img src={img} className="w-full" style={{height:'200px'}} alt="" /></figure>
   <div class="card-body">
     <h2 class="card-title">{name}</h2>
-    <p><span> Description:{description.length < 70 ? description : description.slice(0, 70)+"..read more.."}</span></p>
+    <p><span> Description:{description?.length < 70 ? description : description.slice(0, 70)+"..read more.."}</span></p>
     <p>Price:{perUnitPrice}</p>
     <p>Minimum quantity:{minimumOrderQuantity}</p>
     <p> Available quantity:{availableQuantity}</p>
