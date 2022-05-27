@@ -1,8 +1,9 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import { toast } from 'react-toastify';
 
 const AddProduct = () => {
-    const { register, formState: { errors }, handleSubmit } = useForm();
+    const { register, formState: { errors }, handleSubmit,reset } = useForm();
     const imgStorageKey='9efd07c61da767b0f8e2b0e846d4f284'
     const onSubmit= async data=>{
         console.log(data)
@@ -29,7 +30,7 @@ const AddProduct = () => {
                     img:img
 
                 }
-                console.log( 'product',product)
+                
                 fetch('http://localhost:5000/items',{
                     method:'POST',
                     headers:{
@@ -40,7 +41,15 @@ const AddProduct = () => {
                     body:JSON.stringify(product)
                 })
                 .then(res=>res.json())
-                .then(inserted=>console.log('product inserted',inserted))
+                .then(inserted=>{
+                    if(inserted.insertedId){
+                        toast.success('product added successfully');
+                        reset()
+                    }
+                    else{
+                        toast.error('product not added')
+                    }
+                })
               }
             console.log('imgbb',result)})
     }
