@@ -31,12 +31,14 @@ const Purchase = () => {
 
         const phone = event.target.phone.value;
         const address = event.target.address.value;
+        const price = event.target.price.value;
 
         const order = {
             
             itemName: name,
             quantity,
             phone,
+            price,
             address,
             userEmail: user.email,
             userName: user.displayName
@@ -87,6 +89,7 @@ const Purchase = () => {
                     <input type="email" name='email' disabled value={user?.email} className="input input-bordered w-full max-w-xs" />
                     <input type="text" value={name} placeholder="Product Name" className="input input-bordered w-full max-w-xs" />
                     <input type="text" name='quantity' placeholder="Quantity" className="input input-bordered w-full max-w-xs" />
+                    <input type="text" name='price' placeholder="price" className="input input-bordered w-full max-w-xs" />
                     <input type="text" name='phone' placeholder="Phone Number" className="input input-bordered w-full max-w-xs" />
                     <input type="text" name='address' placeholder="Address" className="input input-bordered w-full max-w-xs" />
                     <input type="submit" value='Place Order' placeholder="" className="input input-bordered w-full max-w-xs btn btn-primary" />
