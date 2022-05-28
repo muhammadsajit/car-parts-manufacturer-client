@@ -22,7 +22,7 @@ const ManageProduct = () => {
 
             <h1 className='text-center text-purple-600 font-bold text-4xl mt-5 mb-3'>Manage Product:{products.length}</h1>
             <div class="overflow-x-auto">
-                <table class="table w-full">
+                <table class="table table-compact w-full">
 
                     <thead>
                         <tr>

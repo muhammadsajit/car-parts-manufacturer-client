@@ -21,7 +21,7 @@ const Users = () => {
             <h1 className="text-2xl">All Users:{users?.length}</h1>
 
             <div class="overflow-x-auto">
-  <table class="table w-full">
+  <table class="table table-compact w-full">
 
     <thead>
       <tr>

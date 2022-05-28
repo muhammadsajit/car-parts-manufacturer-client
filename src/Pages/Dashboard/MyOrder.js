@@ -35,7 +35,7 @@ const MyOrder = () => {
         <div>
             <h1>My orders:{orders.length}</h1>
             <div class="overflow-x-auto   md:block ">
-  <table class="table w-full">
+  <table class="table table-compact w-full">
     
     <thead>
       <tr>
@@ -57,7 +57,9 @@ const MyOrder = () => {
                 <td>{order.itemName}</td>
                 <td>{order.quantity}</td>
                 <td>
-                {(order.price && !order.paid) &&<Link to={`/dashboard/payment/${order._id}`}><button className='btn btn-xs btn-success'>Pay</button></Link>}
+                {(order.price && !order.paid) &&<>
+                  <Link to={`/dashboard/payment/${order._id}`}><button className='btn btn-xs btn-success'>Pay</button></Link>
+                  <button className='btn btn-error btn-xs'>delete</button></>}
                 {(order.price && order.paid) &&<div>
                   <p className='text-success'>Paid</p>
                   <p className='text-success'>TransactionId:{order.transactionId}</p>
