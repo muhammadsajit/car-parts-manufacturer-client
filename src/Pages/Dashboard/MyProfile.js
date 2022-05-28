@@ -21,9 +21,9 @@ const MyProfile = () => {
     }).then(res => res.json()));
     refetch()
 
-    if (isLoading) {
-        return <Loading></Loading>
-    }
+    // if (isLoading) {
+    //     return <Loading></Loading>
+    // }
 
 
     // useEffect(() => {

@@ -3,10 +3,15 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import { signOut } from 'firebase/auth';
 import { Link, useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import Loading from '../Loading/Loading';
 
 const MyOrder = () => {
     const [orders,setOrders]=useState([]);
     const [user]=useAuthState(auth);
+    const[loading,setLoading]=useState(true);
+    const [reload,setReload]=useState(true)
+    
     const navigate=useNavigate()
     useEffect(()=>{
        if(user){
@@ -28,11 +33,42 @@ const MyOrder = () => {
          return res.json()})
         .then(data=>{
             setOrders(data);
+            
+            setLoading(false);
         })
        }
-    },[user])
+    },[user,reload]);
+    const email=user?.email;
+    const handleDeleteOrder=(id)=>{
+
+ 
+      
+      fetch(`http://localhost:5000/orders/${id}`,{
+        method:'DELETE',
+        headers: {
+
+          "authorization": `Bearer ${localStorage.getItem('accessToken')}`
+      }
+      })
+      .then(res=>res.json())
+      .then(data=>{
+        if(data.deletedCount){
+          toast.success('order deleted')
+        }
+        setReload(false)
+        console.log(data)})
+
+    }
     return (
         <div>
+          {
+                 
+                 loading?<div><Loading></Loading></div>:null
+             
+         }
+         {
+           reload
+         }
             <h1>My orders:{orders.length}</h1>
             <div class="overflow-x-auto   md:block ">
   <table class="table table-compact w-full">
@@ -59,7 +95,8 @@ const MyOrder = () => {
                 <td>
                 {(order.price && !order.paid) &&<>
                   <Link to={`/dashboard/payment/${order._id}`}><button className='btn btn-xs btn-success'>Pay</button></Link>
-                  <button className='btn btn-error btn-xs'>delete</button></>}
+
+                  <button className='btn btn-error btn-xs' onClick={()=>handleDeleteOrder(order._id)}>delete</button></>}
                 {(order.price && order.paid) &&<div>
                   <p className='text-success'>Paid</p>
                   <p className='text-success'>TransactionId:{order.transactionId}</p>
