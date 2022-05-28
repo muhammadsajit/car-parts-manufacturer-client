@@ -31,7 +31,7 @@ const AddProduct = () => {
 
                 }
                 
-                fetch('http://localhost:5000/items',{
+                fetch('https://calm-sands-82360.herokuapp.com/items',{
                     method:'POST',
                     headers:{
                         'content-type':'application/json',

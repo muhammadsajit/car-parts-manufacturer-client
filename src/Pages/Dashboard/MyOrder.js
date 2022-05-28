@@ -15,7 +15,7 @@ const MyOrder = () => {
     const navigate=useNavigate()
     useEffect(()=>{
        if(user){
-        fetch(`http://localhost:5000/orders?userEmail=${user.email}`,{
+        fetch(`https://calm-sands-82360.herokuapp.com/orders?userEmail=${user.email}`,{
           method:"GET",
           headers:{
             'authorization':`Bearer ${localStorage.getItem('accessToken')}`
@@ -43,7 +43,7 @@ const MyOrder = () => {
 
  
       
-      fetch(`http://localhost:5000/orders/${id}`,{
+      fetch(`https://calm-sands-82360.herokuapp.com/orders/${id}`,{
         method:'DELETE',
         headers: {
 
@@ -70,8 +70,9 @@ const MyOrder = () => {
            reload
          }
             <h1>My orders:{orders.length}</h1>
-            <div class="overflow-x-auto   md:block ">
-  <table class="table table-compact w-full">
+            <div className="overflow-x-auto   w-screen lg:w-full ">
+  <table className="table table-compact w-full">
+  {/*  */}
     
     <thead>
       <tr>

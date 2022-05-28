@@ -8,8 +8,8 @@ const ProductRow = ({ product, index,refetch,setDeleteProduct }) => {
     return (
         <tr>
             <th>{index + 1}</th>
-            <td><div class="avatar">
-                <div class="w-20 rounded">
+            <td><div className="avatar">
+                <div className="w-20 rounded">
                     <img src={img} alt="Tailwind-CSS-Avatar-component" />
                 </div>
             </div>
@@ -19,7 +19,7 @@ const ProductRow = ({ product, index,refetch,setDeleteProduct }) => {
             <td>{availableQuantity}</td>
             <td>{perUnitPrice}</td>
             <td>
-            <label onClick={()=>setDeleteProduct(product)} for="delete-confirm-modal" class="btn btn-xs btn-error">Delete</label>
+            <label onClick={()=>setDeleteProduct(product)} htmlFor="delete-confirm-modal" className="btn btn-xs btn-error">Delete</label>
 
  
                 </td>

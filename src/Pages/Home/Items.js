@@ -6,7 +6,7 @@ const Items = () => {
     const [parts,setParts]=useState([]);
     const[loading,setLoading]=useState(true);
     useEffect(()=>{
-        fetch('http://localhost:5000/items')
+        fetch('https://calm-sands-82360.herokuapp.com/items')
         .then(res=>res.json())
         .then(data=>{
             setParts(data)

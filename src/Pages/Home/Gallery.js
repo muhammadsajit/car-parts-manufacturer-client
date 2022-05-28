@@ -12,43 +12,43 @@ const Gallery = () => {
        <div >
            <h1 className='text-center text-5xl text-blue-600 font-bold mb-5 mt-20'>Gallery Of Tools</h1>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-10'>
-    <div class="card w-96 bg-base-100 shadow-xl">
-  <div class="card-body">
+    <div className="card w-96 bg-base-100 shadow-xl">
+  <div className="card-body">
     
     <img className='h-96' src={gallery1} alt="" />
  
   </div>
 </div>
-    <div class="card w-96 bg-base-100 shadow-xl">
-  <div class="card-body">
+    <div className="card w-96 bg-base-100 shadow-xl">
+  <div className="card-body">
     
     <img className='h-96' src={gallery2} alt="" />
  
   </div>
 </div>
-    <div class="card w-96 bg-base-100 shadow-xl ">
-  <div class="card-body">
+    <div className="card w-96 bg-base-100 shadow-xl ">
+  <div className="card-body">
     
     <img className='h-96' src={gallery3} alt="" />
  
   </div>
 </div>
-    <div class="card w-96 bg-base-100 shadow-xl ">
-  <div class="card-body">
+    <div className="card w-96 bg-base-100 shadow-xl ">
+  <div className="card-body">
     
     <img className='h-96' src={gallery4} alt="" />
  
   </div>
 </div>
-    <div class="card w-96 bg-base-100 shadow-xl ">
-  <div class="card-body">
+    <div className="card w-96 bg-base-100 shadow-xl ">
+  <div className="card-body">
     
     <img className='h-96' src={gallery5} alt="" />
  
   </div>
 </div>
-    <div class="card w-96 bg-base-100 shadow-xl ">
-  <div class="card-body">
+    <div className="card w-96 bg-base-100 shadow-xl ">
+  <div className="card-body">
     
     <img className='h-96' src={gallery6} alt="" />
  

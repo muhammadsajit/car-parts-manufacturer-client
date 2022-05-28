@@ -11,7 +11,7 @@ const MyProfile = () => {
     const [loading, setLoading] = useState(true);
     const [user] = useAuthState(auth);
     const email = user?.email;
-    const url = `http://localhost:5000/profiles/${email}`
+    const url = `https://calm-sands-82360.herokuapp.com/profiles/${email}`
     const { data: profile, isLoading, refetch } = useQuery(['profile', email], () => fetch(url, {
         method: "GET",
         headers: {
@@ -27,7 +27,7 @@ const MyProfile = () => {
 
 
     // useEffect(() => {
-    //     fetch(`http://localhost:5000/profiles/${email}`)
+    //     fetch(`https://calm-sands-82360.herokuapp.com/profiles/${email}`)
     //         .then(res => res.json())
     //         .then(data => {
     //             setProfiles(data)
@@ -62,7 +62,7 @@ const MyProfile = () => {
         }
         console.log(currentUser)
         if (email) {
-            fetch(`http://localhost:5000/user/${email}`, {
+            fetch(`https://calm-sands-82360.herokuapp.com/user/${email}`, {
                 method: "PUT",
                 headers: {
                     'content-type': 'application/json'
@@ -112,7 +112,7 @@ const MyProfile = () => {
                 <h1> link:{profile?.education}</h1>
             </div> */}
             {/* lg:card-side */}
-            <div class="card  bg-base-100 shadow-xl">
+            <div className="card  bg-base-100 shadow-xl">
                 <div>
                     <form onSubmit={onSubmit} className='grid grid-cols-1 gap-3 justify-items-center'>
 
@@ -128,8 +128,8 @@ const MyProfile = () => {
                     </form>
                 </div>
 
-                <div class="card-body mx-auto">
-                    <h2 class="card-title text-4xl text-green-400">Details Information</h2>
+                <div className="card-body mx-auto">
+                    <h2 className="card-title text-4xl text-green-400">Details Information</h2>
                     <h1 className='text-2xl text-purple-400'> profileName:{user.displayName} </h1>
                     <h1 className='text-2xl text-purple-400'> profileEmail:{user.email}</h1>
                     

@@ -5,7 +5,7 @@ import UserRow from './UserRow';
 
 const Users = () => {
 
-     const {data:users,isLoading,refetch}=useQuery('users',()=>fetch('http://localhost:5000/users',{
+     const {data:users,isLoading,refetch}=useQuery('users',()=>fetch('https://calm-sands-82360.herokuapp.com/users',{
         method:'GET',
         headers:{
             "authorization":`Bearer ${localStorage.getItem('accessToken')}`
@@ -20,8 +20,8 @@ const Users = () => {
         <div>
             <h1 className="text-2xl">All Users:{users?.length}</h1>
 
-            <div class="overflow-x-auto">
-  <table class="table table-compact w-full">
+            <div className="overflow-x-auto">
+  <table className="table table-compact w-full">
 
     <thead>
       <tr>

@@ -4,10 +4,10 @@ const SingleReview = ({review}) => {
     const {userName,userEmail,description,ratings}=review;
     return (
         <div>
-                      <div class="card lg:max-w-lg bg-base-100 shadow-xl">
+                      <div className="card lg:max-w-lg bg-base-100 shadow-xl">
 
-  <div class="card-body">
-    <h2 class="card-title">Reviewer:{userName}</h2>
+  <div className="card-body">
+    <h2 className="card-title">Reviewer:{userName}</h2>
     <p>Email:{userEmail}</p>
     <p>Ratings:{ratings}</p>
     <p><span> Description:{description}</span></p>

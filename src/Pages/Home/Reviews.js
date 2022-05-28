@@ -10,7 +10,7 @@ const Reviews = () => {
     const [loading, setLoading] = useState(true);
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/reviews`)
+            fetch(`https://calm-sands-82360.herokuapp.com/reviews`)
                 .then(res => res.json())
                 .then(data => {
                     setReviews(data);

@@ -4,15 +4,15 @@ import OrderRow from './OrderRow';
 const ManageAllOrder = () => {
     const [manageOrders,setMangeOrders]=useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/order')
+        fetch('https://calm-sands-82360.herokuapp.com/order')
         .then(res=>res.json())
         .then(data=>setMangeOrders(data))
     },[])
     return (
         <div>
             <h1 className='text-center text-purple-600 font-bold text-4xl mt-5 mb-3'>Manage orders:{manageOrders.length}</h1>
-            <div class="overflow-x-auto">
-                <table class="table w-full">
+            <div className="overflow-x-auto">
+                <table className="table w-full">
 
                     <thead>
                         <tr>
