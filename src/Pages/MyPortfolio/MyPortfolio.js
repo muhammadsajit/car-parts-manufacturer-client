@@ -3,9 +3,9 @@ import React from 'react';
 const MyPortfolio = () => {
     return (
         <div>
-            <h1 className='text-center text-4xl text-blue-500 mt-3'>Name: Muhammad Sajit</h1>
-            <h2 className='text-center text-3xl text-blue-600 mb-2'>Email Address:muhammad.sajit75@gmail.com</h2>
-            <h3 className='text-center text-2xl text-blue-600 mb-2' >Educational backGround:Bsc Engineering in Textile</h3>
+            <h1 className='text-center text-4xl text-blue-500 mt-3'>Name:Sayma Akter</h1>
+            <h2 className='text-center text-3xl text-blue-600 mb-2'>Email Address:saymasumi106353@gmail.com</h2>
+            <h3 className='text-center text-2xl text-blue-600 mb-2' >Educational backGround:Bsc Engineering in ICT</h3>
             <h4 className='text-center text-xl text-blue-700 mb-2'>Skills:HTML,CSS,Bootstrap,tailwind,javascript,react,nodejs,mongodb</h4>
             <div>
                 <h1 className='text-center text-4xl text-blue-500 mt-3'>Live Website link</h1>
